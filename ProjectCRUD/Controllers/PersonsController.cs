@@ -33,7 +33,7 @@ namespace ProjectCRUD.Controllers
          public IActionResult ViewPerson()
         {
             IEnumerable<Persons> ob = _db.Persons;
-            return View("View",ob);
+            return NotFound();
         }
 
 
